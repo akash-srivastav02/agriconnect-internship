@@ -15,13 +15,12 @@ testing/deployment planning, and final project documentation.
 
 ## Repository Structure
 
-├── week1-requirements/
-│   └── Week1_Requirements_Analysis_Report.docx
-├── week2-architecture/       # System Architecture & Design (upcoming)
-├── week3-module-dev/         # Module Development & Integration Planning (upcoming)
-├── week4-testing-deployment/ # Testing, Debugging & Deployment Strategy (upcoming)
-├── week5-final-docs/         # Performance Evaluation & Final Documentation (upcoming)
-└── README.md
+- `week1-requirements/` — Week1_Requirements_Analysis_Report.docx
+- `week2-architecture/` — System Architecture & Design (upcoming)
+- `week3-module-dev/` — Module Development & Integration Planning (upcoming)
+- `week4-testing-deployment/` — Testing, Debugging & Deployment Strategy (upcoming)
+- `week5-final-docs/` — Performance Evaluation & Final Documentation (upcoming)
+- `README.md`
 
 Each week's folder will contain the corresponding Word (.docx) report, any
 supporting diagrams, and code or pseudocode where applicable.
