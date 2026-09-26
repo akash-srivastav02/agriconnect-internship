@@ -44,13 +44,41 @@ supporting diagrams, and code or pseudocode where applicable.
 - README updated to reflect Week 1 submission.
 - Next up: Week 2 – System Architecture and Design.
 
-## Tech Stack (Tentative)
+### 26 September 2026
+- Completed and uploaded Week 2 deliverable: `Week2_System_Architecture_Design_Report.docx`.
+- Report defines a layered microservices architecture (six services behind a
+  single API Gateway), a high-level architecture diagram, a component
+  responsibility table, detailed module design with sample REST endpoints,
+  a data model overview, a sequence diagram for the place-order flow, a
+  deployment/infrastructure view, design rationale for scalability/security/
+  modularity, technology stack recommendations, and full traceability back
+  to all twelve Week 1 non-functional requirements.
+- Grounded in real-world data: a case study on India's e-NAM agri-market
+  platform, TRAI connectivity statistics, and UPI/NPCI payment volume data.
+- README updated to reflect Week 2 submission.
+- Next up: Week 3 – Module Development and Integration Planning.
 
-To be finalized in the Week 2 System Architecture task. Likely direction:
-mobile-first client, REST API backend, relational database for transactional
-data, and integration points for a payment gateway and a government mandi
-price feed.
+## Tech Stack (Finalized in Week 2)
+
+| Layer | Technology |
+|---|---|
+| Mobile Client | React Native |
+| Admin Web Dashboard | React.js |
+| API Gateway | Managed API Gateway (auth, rate limiting, routing) |
+| Backend Services | Node.js + Express (TypeScript) |
+| Primary Database | PostgreSQL (managed) |
+| Cache | Redis (managed) |
+| Message Queue | Managed queue (e.g. Amazon SQS or RabbitMQ) |
+| Object Storage / CDN | S3-compatible storage + CDN |
+| Hosting | Docker containers on a managed container service |
+| Monitoring | Centralized logging + metrics dashboard |
+
+Six core microservices — User & Auth, Crop Listing & Inventory, Market Price
+Engine, Order & Logistics, Notification, and Analytics & Reporting — sit
+behind a single API Gateway, with an event-driven message queue decoupling
+notification dispatch from the main request path. Full rationale in
+`week2-architecture/Week2_System_Architecture_Design_Report.docx`.
 
 ## License
 
-This repository is for internship submission and educational purposes.
+This repository is for internship submission and educational purposes
